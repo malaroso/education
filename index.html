@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+     
+     
+
+        <nav class="navbar ">
+            <div class="container">
+                <a class="navbar-brand" href="http://localhost/TeachME/">
+                    <div class="logo-text">Emirhan Ekin</div>
+                </a>
+                <div class="bars">
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class='bx bx-menu-alt-right'></i></span>
+                    
+                </div>
+            </div>
+        </nav>
+
+        <div id="openmenu" class="openmenu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="openmenu-content">
+              <a href="#">Anasayfa</a>
+              <a href="#">Tüm Dersler</a>
+              <a href="#">Derslerim</a>
+              <a href="#">Sepetim</a>
+              <a href="#">Ayarlarım</a>
+              <a href="#">Çıkış yap</a>
+            </div>
+          </div>
+
+        <div class="clear25"></div>
+        <div class="container">
+            
+            <ul class="nav menü  justify-content-end">
+                <div class="wrapper">
+                <div class="item"> <a class="bumbalink nav-link  login-btn" aria-current="page" href="">Anasayfa</a></div>
+                <div class="item"> <a class="bumbalink nav-link login-btn" aria-current="page" href="">Tüm Dersler</a></div>
+                <div class="item"> <a class="bumbalink nav-link login-btn" aria-current="page" href="">Derslerim</a></div>
+                <div class="item"> <a class="bumbalink nav-link login-btn" aria-current="page" href="">Sepetim</a></div>
+                <div class="item"> <a class="bumbalink nav-link login-btn " href="">Ayarlarım</a></div>
+                <div class="item"> <a class="bumbalink nav-link login-btn " href="">Çıkış yap</a></div>
+                <div class="item">  
+                     <div class="dropdown">
+                                <a class="bumbalink nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"href="#"><img src="images/language.png" width="36" height="36" alt="" srcset=""></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Türkçe  <img src="images/turkey.png" width="32" alt=""><i class='bx bx-check lang-check' ></i></a> </li>
+                                    <li><a class="dropdown-item" href="#">İngilizce <img src="images/united-kingdom.png" width="32" alt=""></a></li>
+                                    <li><a class="dropdown-item" href="#">Almanca <img src="images/german.png" width="32" alt=""></a></li>
+                                </ul>
+                            </div>
+                    </div>               
+                </div>
+                <!-- <div class="wrapper">
+                    <div class="item"> <a class="bumbalink nav-link login-btn" aria-current="page" href="login">Giriş Yap</a></div>
+                    <div class="item">  <a class="bumbalink nav-link sign-up-btn " href="sign-up">Kaydol</a></div>
+                    <div class="item">  <div class="dropdown">
+                            <a class="bumbalink nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"href="#"><img src="images/language.png" width="36" height="36" alt="" srcset=""></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Türkçe  <img src="images/turkey.png" width="32" alt=""><i class='bx bx-check lang-check' ></i></a> </li>
+                                <li><a class="dropdown-item" href="#">İngilizce <img src="images/united-kingdom.png" width="32" alt=""></a></li>
+                                <li><a class="dropdown-item" href="#">Almanca <img src="images/german.png" width="32" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> -->             
+            </ul>
+         
+        </div>
+        <div class="clear25"></div>  
+   
+</head>
+<body>
+
+
+
+<div class="row bg text-center ">
+    <div class="col-md-12 banner-area" >
+        <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, ullam.</div>
+        <button class="banner-btn">Dersleri Keşfet</button>
+    </div>
+    <div class="col-md-12 ">
+        <img src="images/banner.png" class="banner text-center" >
+    </div>
+</div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#ced6e0" fill-opacity="1" d="M0,0L1440,128L1440,0L0,0Z"></path>
+    </svg>
+
+
+<div class="rclear150"></div>
+
+<div class="container">
+    <div class="col-md-8">
+        <div class="courses">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, ullam  Fuga, provident.</div>
+        <div class="courses2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </div>
+    <div class="clear25"></div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <!-- Tabs navs -->
+            <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a  class="nav-link active" id="ex1-tab-1" data-mdb-toggle="tab" href="#ex1-tabs-1" role="tab" aria-controls="ex1-tabs-1" aria-selected="true">PHP</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link"  id="ex1-tab-2" data-mdb-toggle="tab" href="#ex1-tabs-2" role="tab" aria-controls="ex1-tabs-2" aria-selected="false">JavaScript</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="ex1-tab-3"  data-mdb-toggle="tab"  href="#ex1-tabs-3" role="tab" aria-controls="ex1-tabs-3"aria-selected="false" >Html</a>
+                </li>  
+                <li class="nav-item" role="presentation">
+                    <a  class="nav-link " id="ex1-tab-4" data-mdb-toggle="tab" href="#ex1-tabs-4" role="tab" aria-controls="ex1-tabs-3" aria-selected="false">Css</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link"  id="ex1-tab-5" data-mdb-toggle="tab" href="#ex1-tabs-5" role="tab" aria-controls="ex1-tabs-4" aria-selected="false">Laravel</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="ex1-tab-6"  data-mdb-toggle="tab"  href="#ex1-tabs-6" role="tab" aria-controls="ex1-tabs-6"aria-selected="false" >Angular</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link lession-go"    href="" role="tab" >Tüm dersler</a>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="ex1-content" style="height:400px;">
+                <div class="tab-pane fade show active"id="ex1-tabs-1" role="tabpanel"aria-labelledby="ex1-tab-1" >
+                    <div class="classCard text-center">
+                        <img src="images/angular.png" class="classimg">
+                        <div class="clear10"></div>
+                        <div class="classHeadText">
+                            Angular Fundementals from Sctrach & Unit
+                        </div>
+                        <div class="clear10"></div>
+                            <div class="classTeachername">
+                                Emirhan Ekin
+                            </div>
+                        <div class="clear10"></div>
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                            <div class="commenttext">   495 Yorum</div>
+                        </div>
+                    </div>
+
+                    <div class="classCard text-center">
+                        <img src="images/react.png" class="classimg">
+                        <div class="clear10"></div>
+                        <div class="classHeadText">
+                            React Fundementals from Sctrach & Unit
+                        </div>
+                        <div class="clear10"></div>
+                            <div class="classTeachername">
+                                Emirhan Ekin
+                            </div>
+                        <div class="clear10"></div>
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                            <i class='bx bx-star' ></i>
+                            <i class='bx bx-star' ></i>
+                            <div class="commenttext">   495 Yorum</div>
+                        </div>
+                    </div>
+
+                    <div class="classCard text-center">
+                        <img src="images/py.png" class="classimg">
+                        <div class="clear10"></div>
+                        <div class="classHeadText">
+                            Phyton Fundementals from Sctrach & Unit
+                        </div>
+                        <div class="clear10"></div>
+                            <div class="classTeachername">
+                                Emirhan Ekin
+                            </div>
+                        <div class="clear10"></div>
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                            <i class='bx bx-star' ></i>
+                            <div class="commenttext">   495 Yorum</div>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                    Tab 2 content
+                </div>
+                <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+                     Tab 3 content
+                </div>
+                <div class="tab-pane fade  " id="ex1-tabs-4" role="tabpanel"aria-labelledby="ex1-tab-4" >
+                    Tab 4 content
+                </div>
+                <div class="tab-pane fade" id="ex1-tabs-5" role="tabpanel" aria-labelledby="ex1-tab-5">
+                    Tab 5 content
+                </div>
+                <div class="tab-pane fade" id="ex1-tabs-6" role="tabpanel" aria-labelledby="ex1-tab-6">
+                <div class="classCard text-center">
+                        <img src="images/angular.png" class="classimg">
+                        <div class="clear10"></div>
+                        <div class="classHeadText">
+                            Angular Fundementals from Sctrach & Unit
+                        </div>
+                        <div class="clear10"></div>
+                            <div class="classTeachername">
+                                Emirhan Ekin
+                            </div>
+                        <div class="clear10"></div>
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                            <div class="commenttext">   495 Yorum</div>
+                        </div>
+                    </div>
+                    <div class="classCard text-center">
+                        <img src="images/angular.png" class="classimg">
+                        <div class="clear10"></div>
+                        <div class="classHeadText">
+                            Angular Fundementals from Sctrach & Unit
+                        </div>
+                        <div class="clear10"></div>
+                            <div class="classTeachername">
+                                Emirhan Ekin
+                            </div>
+                        <div class="clear10"></div>
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                            <div class="commenttext">   495 Yorum</div>
+                        </div>
+                    </div>
+                    <div class="classCard text-center">
+                        <img src="images/angular.png" class="classimg">
+                        <div class="clear10"></div>
+                        <div class="classHeadText">
+                            Angular Fundementals from Sctrach & Unit
+                        </div>
+                        <div class="clear10"></div>
+                            <div class="classTeachername">
+                                Emirhan Ekin
+                            </div>
+                        <div class="clear10"></div>
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                            <div class="commenttext">   495 Yorum</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>  
+<div class="clear100"></div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <div class="courses">Başlamak için çok fazla sebebin var ..</div>
+            <div class="courses2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        </div>
+        <div class="clear25"></div>
+        <div class="col-md-12">
+            <div class="bottomcard">
+                <div class="bottomcard text-center">
+                    <img src="images/open-book.png" class="bottomcard-img">
+                    <div class="bottom-texthead">Açık Öğretici Kaynak</div>
+                    <div class="bottom-cardtext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt hic repellendus laboriosam placeat animi adipisci eligendi iure impedit qui labore.</div>
+                </div>
+            </div>
+            <div class="bottomcard">
+                <div class="bottomcard text-center">
+                    <img src="images/bookmark.png" class="bottomcard-img">
+                    <div class="bottom-texthead">Kaydet Devam Et</div>
+                    <div class="bottom-cardtext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt hic repellendus laboriosam placeat animi adipisci eligendi iure impedit qui labore.</div>
+                </div>
+            </div>
+            <div class="bottomcard">
+                <div class="bottomcard text-center">
+                    <img src="images/books.png" class="bottomcard-img">
+                    <div class="bottom-texthead">Çeşitli İçerik</div>
+                    <div class="bottom-cardtext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt hic repellendus laboriosam placeat animi adipisci eligendi iure impedit qui labore.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+    <div class="clear150"></div>
+    <div class="row footer">
+         <div class="col-md-3">
+             <div class="text-center">
+                 <div class="footerhead">Hakkında</div>
+                 <div class="footer-hr"></div>
+                 <div class="footer-text">
+                     <ul>
+                         <li class="footer-link">TeachME İşyeri</li>
+                         <li class="footer-link">TeachME Ders verin</li>
+                         <li class="footer-link">Bize ulaşın</li>
+                         <li class="footer-link">Hakkımızda</li>
+                     </ul>
+             
+                 </div>
+             </div>
+         </div>
+         <div class="col-md-3">
+             <div class="text-center">
+                 <div class="footerhead">Hızlı Linkler</div>
+                 <div class="footer-hr"></div>
+                 <div class="footer-text">
+                     <ul>
+                         <li class="footer-link">TeachME İşyeri</li>
+                         <li class="footer-link">TeachME Ders verin</li>
+                         <li class="footer-link">Bize ulaşın</li>
+                         <li class="footer-link">Hakkımızda</li>
+                         
+                     </ul>
+                 </div>
+             </div>
+         </div>
+         <div class="col-md-6"></div>
+         <div class="clear50"></div>
+         <div class="col-md-6">
+            
+         </div>
+         <div class="col-md-6">
+             <div class="marka">TeachME, ®2022 Inc.  </div>
+         </div>
+         <div class="clear50"></div>
+     </div>
+
+
+
+
+     
+     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+     <!-- Initialize Swiper -->
+     <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+            el: ".swiper-pagination",
+            },
+        });
+
+        function openNav() {
+            document.getElementById("openmenu").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("openmenu").style.width = "0%";
+        }
+     </script>
+     
+ <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+</body>
+</html>
